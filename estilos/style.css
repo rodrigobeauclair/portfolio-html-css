@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Source+Code+Pro:wght@400;700;800;900&display=swap');
+
+:root {
+    --cor-01: #37ff8a;
+    --cor-02: #583f61;
+    --cor-03: #EEE5E9;
+
+    --fonte-padrão: 'DM Sans', sans-serif;
+    --fonte-titulos: 'Source Code Pro', monospace;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 2.5em;
+}
+
+body p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.1em;
+}
+
+/* cabeçalho da página */
+
+#cabecalho {
+    background-color: var(--cor-02);
+    width: 100%;
+}
+
+.conteudo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5em 6em;
+}
+
+.logo-header {
+    font-family: var(--fonte-titulos);
+    font-size: 1.8em;
+    color: var(--cor-01);
+}
+
+.underline {
+    color: white;
+}
+
+.menu-lista {
+    display: inline-block;
+    list-style: none;
+}
+
+a {
+
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+    margin: 0px -2.5px;
+    letter-spacing: 0.6px;
+}
+
+a:hover {
+    color: var(--cor-01);
+    transition: 0.3s;
+}
+
+/* conteúdo home da página */
+
+/* container da página toda */
+#container {
+    background-color: var(--cor-02);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.home-section {
+    display: flex;
+    margin: 120px;
+}
+
+.home-titulo {
+    color: white;
+    font-family: var(--fonte-titulos);
+    font-size: 3em;
+    padding-top: 70px;
+}
+
+.home-name {
+    color: var(--cor-01);
+    font-family: var(--fonte-titulos);
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.home-p {
+    color: white;
+}
+
+.home-p2 {
+    color: white;
+    line-height: 1.6em;
+}
+
+.home-img {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin-left: 12em;
+}
+
+/* conteúdo sobre e habilidades da página */
+
+#about {
+    background-color: var(--cor-03);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    color: var(--cor-02);
+    margin-top: 80px;
+}
+
+.about-p {
+    padding-top: 20px;
+    text-align: center;
+    width: 60%;
+    line-height: 1.5em;
+}
+
+.about-btn {
+    padding: 1rem 2rem;
+    background-color: var(--cor-02);
+    border-radius: 9000px;
+    margin: 40px;
+    font-size: 1.2em;
+}
+
+.about-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.skills-title {
+    color: var(--cor-02);
+}
+
+.skills-content {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.skills-btn {
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    background-color: rgb(199, 197, 197);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.skills-btn:hover {
+    color: var(--cor-02);
+    background-color: var(--cor-01);
+}
+
+/* conteúdo projeto da página */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.projects-title {
+    color: white;
+    padding: 20px;
+}
+
+.projects-p {
+    color: white;
+    width: 40%;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.projects-loading {
+    color: var(--cor-02);
+    font-family: var(--fonte-titulos);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px;
+    margin: 37px;
+    background-color: var(--cor-01);
+    border-radius: 8px;
+}
+
+/* conteúdo contato da página */
+
+#contact {
+    background-color: var(--cor-03);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.contact-title {
+    text-align: center;
+    color: var(--cor-02);
+    padding: 20px;
+}
+
+.contact-p {
+    border: 4px solid var(--cor-02);
+    border-radius: 5px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-btn {
+    background-color: var(--cor-02);
+    margin-top: 40px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.contact-btn:hover {
+    color: var(--cor-02);
+    background-color: var(--cor-01);
+    border: 1px solid var(--cor-02);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-02);
+    color: white;
+    padding: 20px;
+    font-family: var(--fonte-padrão);
+    font-size: 0.8em;
+}
+
+.footer-p {
+    padding: 5px;
+}
