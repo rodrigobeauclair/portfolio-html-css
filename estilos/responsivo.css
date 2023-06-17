@@ -82,13 +82,13 @@
 @media screen and (max-width: 360px) {
 
     .home-titulo {
-        font-size: 1.7em;
+        font-size: 2em;
         width: 120%;
         margin-left: -20px;
       }
     
       .home-name {
-        font-size: 1.7em;
+        font-size: 2em;
       }
     
       .home-p,
