@@ -8,7 +8,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
 
@@ -62,7 +62,8 @@
 
     .home-titulo {
         font-size: 2em;
-        width: 120%;margin-left: -20px;
+        width: 120%;
+        margin-left: -20px;
     }
 
     .home-name {
@@ -76,4 +77,50 @@
     .home-p2 {
         font-size: 0.98em;
     }
+}
+
+@media screen and (max-width: 360px) {
+
+    .home-titulo {
+        font-size: 1.7em;
+        width: 120%;
+        margin-left: -20px;
+      }
+    
+      .home-name {
+        font-size: 1.7em;
+      }
+    
+      .home-p,
+      .home-p2 {
+        font-size: 0.95em;
+        width: 130%;
+        margin-left: -25px;
+      }
+
+    .about-p, .projects-p {
+        width: 85%;
+        font-size: 0.9em;
+    }
+
+    .home-img {
+        width: 90%;
+        margin-top: -30%;
+    }
+
+    .about-btn,
+    .skills-btn {
+      font-size: 0.9em;
+      padding: 0.8rem 1.6rem;
+    }
+  
+    .contact-p {
+      padding: 30px;
+      font-size: 1em;
+    }
+  
+    footer {
+      font-size: 0.7em;
+    }
+
 }
